@@ -2843,6 +2843,15 @@ libc_support_library(
 )
 
 libc_support_library(
+    name = "__support_math_fsqrt",
+    hdrs = ["src/__support/math/fsqrt.h"],
+    deps = [
+        ":__support_math_sqrt",
+    ],
+)
+
+
+libc_support_library(
     name = "__support_math_ilogbf16",
     hdrs = ["src/__support/math/ilogbf16.h"],
     deps = [

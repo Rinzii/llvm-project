@@ -632,6 +632,14 @@ add_header_library(
 )
 
 add_header_library(
+   fsqrt
+   HDRS
+     fsqrt.h
+   DEPENDS
+     libc.src.__support.FPUtil.sqrt
+)
+
+add_header_library(
   ilogbf16
   HDRS
     ilogbf16.h

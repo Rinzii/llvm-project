@@ -5224,7 +5224,8 @@ add_entrypoint_object(
   HDRS
     ../fsqrt.h
   DEPENDS
-    libc.src.__support.FPUtil.generic.sqrt
+    libc.src.__support.common
+    libc.src.__support.math.fsqrt
 )
 
 add_entrypoint_object(
